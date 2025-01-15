@@ -1,11 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
     return(
-        <div className="border-b-2 border-white flex-1 pr-2 pl-2 pt-5 pb-4">
-            <div className="flex justify-between font-sans text-lg">
-                <div className="hover:underline"><a href="/">Aidan Tobar</a></div>
-                <div className="hover:underline"><Link href={"https://github.com/Aidant22"}>My GitHub</Link></div>
+        <div className="border-b-2 border-black flex-1 py-4 px-2">
+            <div className="flex justify-between font-sans">
+                <div className="text-xl"><a href="/"><h2 className="hover:underline hover:shadow-sm">Aidan Tobar</h2></a></div>
+                <div><Link href={"https://github.com/Aidant22"} target="blank"><Image src={"/github-mark/github-mark.png"} alt="github logo" width={35} height={35} className="hover:w-9 hover:h-9 hover:shadow-xl rounded-full"/></Link></div>
             </div>
         </div>
     );
