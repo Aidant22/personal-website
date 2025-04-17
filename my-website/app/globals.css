@@ -3,47 +3,47 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif, 'Oswald';
+  font-family: Arial, Helvetica, sans-serif, "Oswald";
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-Bold.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-ExtraLight.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-ExtraLight.ttf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-Light.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-Light.ttf");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-Medium.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-Medium.ttf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-Regular.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-Regular.ttf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Oswald';
-  src: url('/fonts/Oswald-SemiBold.ttf');
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-SemiBold.ttf");
   font-weight: 600;
   font-style: normal;
 }
@@ -111,4 +111,8 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.resume {
+  height: 75vh;
 }

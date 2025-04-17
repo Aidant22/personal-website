@@ -30,11 +30,11 @@ export default function Resume() {
           },
         }}
       />
-      <div className="flex justify-center pt-12 z-10">
+      <div className="flex justify-center pt-5 z-10">
         <iframe
-          src="/text-doc/Resume.pdf"
+          src="/text-doc/FixedResume.pdf"
           title="Resume"
-          className="w-3/4 h-screen z-10"
+          className="md:w-3/4 sm:w-3/4 w-3/4 resume z-10"
         />
       </div>
     </>
