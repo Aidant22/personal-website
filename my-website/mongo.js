@@ -1,15 +1,15 @@
-require("dotenv").config();
-const mongoose = require("mongoose");
+const { MongoClient } = require("mongodb");
 
-const uri = process.env.MONGODB_URI;
+async function main() {
+  const uri = process.env.MONGODB_URI;
 
-if (!uri) {
-  throw new Error("MONGODB_URI is not defined in your env file");
+  const client = new MongoClient(uri);
+
+  try {
+    await client.connect();
+  } finally {
+    await client.close();
+  }
 }
-mongoose
-  .connect(uri, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("Connected to MongoDB!"))
-  .catch((err) => console.error("MongoDB connection error: ", err));
+
+main().catch(console.error);
