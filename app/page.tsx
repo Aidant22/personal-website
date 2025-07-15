@@ -34,7 +34,7 @@ export default function HomePage() {
         }}
       />
 
-      <div className="relative  pb-4 h-screen flex items-center justify-center">
+      <div className="relative enclose flex items-center justify-center">
         <div className="bg-white shadow-xl shadow-gray-600 p-8 rounded-lg card text-center overflow-scroll">
           <div className="flex justify-center">
             <div className="w-64 h-64 rounded-full overflow-hidden flex justify-center border-4 border-white shadow-lg shadow-gray-600">
@@ -60,10 +60,17 @@ export default function HomePage() {
             <li>I am a student at Bowling Green State University.</li>
             <li>I am working on my Bachelor of Science in Computer Science.</li>
             <li>I enjoy making websites and web applications!</li>
-            <li>
-              I volunteer at my old high school to coach Valorant esports.
-            </li>
+            <li>I volunteer at my old high school to coach Valorant esports.</li>
           </ol>
+        </div>
+      </div> 
+      <div className="relative flex justify-center pb-20">       
+        <div className="bg-white shadow-lg shadow-gray-600 p-4 card rounded-lg text-center">
+            <h2 className="font-oswald font-bold text-xl text-center pt-4">Links to other websites/apps I have created</h2>
+            <div>I am currently coming up with and working on new ideas!</div>
+            <div className="flex justify-center">
+              <Image src="/sleeping-wingman.gif" alt="sleeping wingman from valorant" width={200} height={200}/>
+            </div>
         </div>
       </div>
     </>

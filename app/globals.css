@@ -122,6 +122,9 @@ body {
   height: 60%;
 }
 
+.enclose {
+  height: 91vh;
+}
 @media (max-width:600px) {
   .footer {
   font-size: x-small;
