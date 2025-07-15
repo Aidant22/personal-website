@@ -13,7 +13,6 @@ export default function HomePage() {
 
   return (
     <>
-      {/* Particles Background */}
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -35,9 +34,8 @@ export default function HomePage() {
         }}
       />
 
-      {/* Main Content */}
-      <div className="relative pt-4 pb-4 h-screen flex items-center justify-center">
-        <div className="bg-white shadow-xl shadow-gray-600 p-8 rounded-lg max-w-lg text-center">
+      <div className="relative  pb-4 h-screen flex items-center justify-center">
+        <div className="bg-white shadow-xl shadow-gray-600 p-8 rounded-lg card text-center overflow-scroll">
           <div className="flex justify-center">
             <div className="w-64 h-64 rounded-full overflow-hidden flex justify-center border-4 border-white shadow-lg shadow-gray-600">
               <Image

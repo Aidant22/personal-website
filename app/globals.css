@@ -116,3 +116,43 @@ body {
 .resume {
   height: 75vh;
 }
+
+.card {
+  width: 90%;
+  height: 60%;
+}
+
+@media (max-width:600px) {
+  .footer {
+  font-size: x-small;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .resume {
+    height: 75vh;
+    min-width: 90%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+  .resume {
+    height: 65vh;
+  }
+  .card {
+  width: 90%;
+  height: 60%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .resume {
+    height: 75vh;
+  }
+  .card {
+  width: 40%;
+  height: 70%;
+  }
+}
+

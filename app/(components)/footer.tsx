@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
       <div className="border-b-4 border-black flex-1 py-4 px-2 ">
-        <div className="flex justify-between font-oswald">
+        <div className="flex justify-between font-oswald footer">
           <div className="flex">
             Contact: <br/>
             22atobar@gmail.com <br/>

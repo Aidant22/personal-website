@@ -35,7 +35,7 @@ export default function Resume() {
         <iframe
           src="/text-doc/July2025Resume.pdf"
           title="Resume"
-          className="md:w-4/5 xl:w-3/4 2xl:w-2/4 sm:w-1/6 lg:w-3/4  resume z-10"
+          className=" md:w-3/4 xl:w-3/4 2xl:w-2/4 sm:w-full lg:w-3/4 resume z-10"
         />
       </div>
     </>
