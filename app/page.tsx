@@ -35,9 +35,9 @@ export default function HomePage() {
 
       {/* Main Content */}
       <div className="relative pt-4 pb-4 h-screen flex items-center justify-center">
-        <div className="bg-white shadow-2xl p-8 rounded-lg max-w-lg text-center">
+        <div className="bg-white shadow-xl shadow-gray-600 p-8 rounded-lg max-w-lg text-center">
           <div className="flex justify-center">
-            <div className="w-64 h-64 rounded-full overflow-hidden flex justify-center border-4 border-white shadow-lg">
+            <div className="w-64 h-64 rounded-full overflow-hidden flex justify-center border-4 border-white shadow-lg shadow-gray-600">
               <Image
                 src={"/Portait.jpeg"}
                 alt="A picture of me"
@@ -53,7 +53,7 @@ export default function HomePage() {
           <p className="text-center font-oswald font-light text-lg pt-4">
             Thank you for visiting my website!
           </p>
-          <h2 className="font-oswald font-bold text-3xl text-center">
+          <h2 className="font-oswald font-bold text-3xl text-center pt-4">
             About me
           </h2>
           <ol className="p-2 ml-4 font-oswald list-decimal text-left">
