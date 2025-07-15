@@ -17,7 +17,7 @@ export default function Header() {
               alt="document logo for resume"
               width={35}
               height={35}
-              className="hover:w-9 hover:h-9 hover:shadow-xl rounded-full"
+              className="rounded-full"
             />
           </Link>
                     <Link
@@ -29,7 +29,7 @@ export default function Header() {
               alt="linkedin logo"
               width={35}
               height={35}
-              className="hover:w-9 hover:h-9 hover:shadow-xl rounded-full"
+              className="rounded-full"
             />
           </Link>
           <Link href={"https://github.com/Aidant22"} target="blank">
@@ -38,7 +38,7 @@ export default function Header() {
               alt="github logo"
               width={35}
               height={35}
-              className="hover:w-9 hover:h-9 hover:shadow-xl rounded-full"
+              className="rounded-full"
             />
           </Link>
 

@@ -2,9 +2,10 @@
 import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
+import type { Engine } from "tsparticles-engine";
 
 export default function Resume() {
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadStarsPreset(engine);
   }, []);
 

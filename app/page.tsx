@@ -3,9 +3,11 @@ import { loadStarsPreset } from "tsparticles-preset-stars";
 import Image from "next/image";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
+import type { Engine } from "tsparticles-engine";
+
 
 export default function HomePage() {
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: Engine) => {
     await loadStarsPreset(engine);
   }, []);
 
