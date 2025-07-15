@@ -11,7 +11,7 @@ export default function Header() {
           </Link>
         </div>
         <div className="flex">
-          <Link href={"/resume"} >
+          <Link href={"/resume"} title="Resume">
             <Image
               src={"/document.svg"}
               alt="document logo for resume"
@@ -20,9 +20,10 @@ export default function Header() {
               className="rounded-full"
             />
           </Link>
-                    <Link
+          <Link
             href={"https://www.linkedin.com/in/aidan-tobar/"}
             target="blank"
+            title="LinkedIn"
           >
             <Image
               src={"/linkedin.png"}
@@ -32,7 +33,7 @@ export default function Header() {
               className="rounded-full"
             />
           </Link>
-          <Link href={"https://github.com/Aidant22"} target="blank">
+          <Link href={"https://github.com/Aidant22"} target="blank" title="Github">
             <Image
               src={"/github-mark/github-mark.png"}
               alt="github logo"
@@ -41,8 +42,6 @@ export default function Header() {
               className="rounded-full"
             />
           </Link>
-
-
         </div>
       </div>
     </div>
