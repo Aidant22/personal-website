@@ -119,12 +119,13 @@ body {
 
 .card {
   width: 90%;
-  height: 60%;
+  height: 65%;
 }
 
 .enclose {
   height: 91vh;
 }
+
 @media (max-width:600px) {
   .footer {
   font-size: x-small;
