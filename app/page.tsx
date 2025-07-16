@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 import type { Engine } from "tsparticles-engine";
+import Link from "next/link";
 
 
 export default function HomePage() {
@@ -50,6 +51,9 @@ export default function HomePage() {
           <p className="text-center font-oswald font-light text-lg pt-4">
             Thank you for visiting my website!
           </p>
+          <div className="text-center font-oswald font-light text-lg pt-1">
+            Check out my <Link href="/resume" className="hover:underline font-normal">Resume</Link>!
+          </div>
           <h2 className="font-oswald font-bold text-3xl text-center pt-4">
             About me
           </h2>
@@ -94,6 +98,9 @@ export default function HomePage() {
           <p className="text-center font-oswald font-light text-lg pt-2">
             Thank you for visiting my website!
           </p>
+          <div className="text-center font-oswald font-light text-lg pt-2">
+            Check out my <Link href="/resume" className="hover:underline">resume</Link>!
+          </div>
         </div>
       </div> 
       <div className="relative flex justify-center pb-20">       
@@ -105,7 +112,7 @@ export default function HomePage() {
             <li>I am a student at Bowling Green State University.</li>
             <li>I am working on my Bachelor of Science in Computer Science.</li>
             <li>I enjoy making websites and web applications!</li>
-            <li>I volunteer at my old high school to coach Valorant esports.</li>
+            <li>I volunteer at my former high school to coach Valorant esports.</li>
           </ol>
         </div>
       </div>
