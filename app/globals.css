@@ -120,19 +120,31 @@ body {
 .card {
   width: 90%;
   height: 65%;
+  padding: 0.5rem;
 }
 
 .enclose {
   height: 91vh;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .footer {
     font-size: x-small;
   }
   .card {
     width: 90%;
-    height: 55%;
+    height: 70%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 401px) {
+  .footer {
+    font-size: x-small;
+  }
+  .card {
+    width: 90%;
+    height: 60%;
   }
 }
 

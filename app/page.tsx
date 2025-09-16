@@ -91,7 +91,7 @@ export default function HomePage() {
       return (
         <>
           <div className="relative enclose flex items-center justify-center">
-            <div className="bg-white shadow-xl shadow-gray-600 rounded-lg card text-center">
+            <div className="bg-white shadow-xl shadow-gray-600 rounded-lg card text-center overflow-scroll">
               <div className="flex justify-center">
                 <div className="w-64 h-64 rounded-full overflow-hidden flex justify-center border-4 border-white shadow-lg shadow-gray-600">
                   <Image
