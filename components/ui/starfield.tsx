@@ -27,7 +27,7 @@ export default function Starfield({
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    if (!ctx && ctx !== null) return;
 
     let w = (canvas.width = window.innerWidth);
     let h = (canvas.height = window.innerHeight);
@@ -77,7 +77,8 @@ export default function Starfield({
 
       // fade previous frame slightly to create trails; reduce alpha after burst for twinkle
       const fadeAlpha = elapsed < burstEnd ? 0.45 : 0.85; // lower = longer trails during burst
-      ctx.fillStyle = `rgba(0,0,0,${fadeAlpha})`;
+      if (ctx) { 
+              ctx.fillStyle = `rgba(0,0,0,${fadeAlpha})`;
       ctx.fillRect(0, 0, w, h);
 
       ctx.globalCompositeOperation = "lighter";
@@ -121,6 +122,7 @@ export default function Starfield({
 
       ctx.globalCompositeOperation = "source-over";
       rafRef.current = requestAnimationFrame(render);
+      }
     }
 
     rafRef.current = requestAnimationFrame(render);
