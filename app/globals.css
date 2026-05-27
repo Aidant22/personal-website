@@ -174,3 +174,14 @@ body {
     height: 75%;
   }
 }
+
+/* Allow the tsparticles fullScreen canvas to show as the page background */
+html,
+body {
+  background: transparent;
+}
+
+/* Force the tsParticles full-screen canvas to a black background if the JS background drawing is skipped */
+canvas[data-generated="true"] {
+  background-color: #000000 !important;
+}
