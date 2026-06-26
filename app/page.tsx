@@ -69,18 +69,34 @@ export default function HomePage() {
           </div>
           <div className="relative flex justify-center pb-20">
             <div className="bg-white shadow-lg shadow-gray-600 p-4 card rounded-lg text-center">
-              <h2 className="font-oswald font-bold text-xl text-center pt-4">
+              <h2 className="font-oswald font-bold text-xl text-center pt-4 pb-3">
                 Links to other websites/apps I have created
               </h2>
-              <div>I am currently coming up with and working on new ideas!</div>
-              <div className="flex justify-center">
-                <Image
-                  src="/sleeping-wingman.gif"
-                  alt="sleeping wingman from valorant"
-                  width={200}
-                  height={200}
+              <a
+                href="https://teclawncare.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:shadow-md hover:bg-gray-50 transition-all text-left"
+              >
+                <img
+                  src="https://www.google.com/s2/favicons?domain=teclawncare.com&sz=48"
+                  alt="TecLawnCare icon"
+                  width={40}
+                  height={40}
+                  className="rounded flex-shrink-0"
                 />
-              </div>
+                <div className="min-w-0">
+                  <div className="font-oswald font-semibold text-sm truncate">
+                    Tri-County Exterior Contractors
+                  </div>
+                  <div className="font-oswald font-light text-xs text-gray-500 truncate">
+                    Lawncare &amp; Landscaping in Bowling Green, OH
+                  </div>
+                  <div className="font-oswald text-xs text-blue-500 truncate">
+                    teclawncare.com
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </>
@@ -136,18 +152,34 @@ export default function HomePage() {
           </div>
           <div className="relative flex justify-center pb-20">
             <div className="bg-white shadow-lg shadow-gray-600 p-4 card rounded-lg text-center">
-              <h2 className="font-oswald font-bold text-xl text-center pt-4">
+              <h2 className="font-oswald font-bold text-xl text-center pt-4 pb-3">
                 Links to other websites/apps I have created
               </h2>
-              <div>I am currently coming up with and working on new ideas!</div>
-              <div className="flex justify-center">
-                <Image
-                  src="/sleeping-wingman.gif"
-                  alt="sleeping wingman from valorant"
-                  width={200}
-                  height={200}
+              <a
+                href="https://teclawncare.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-3 border border-gray-200 rounded-lg hover:shadow-md hover:bg-gray-50 transition-all text-left"
+              >
+                <img
+                  src="https://www.google.com/s2/favicons?domain=teclawncare.com&sz=48"
+                  alt="TecLawnCare icon"
+                  width={40}
+                  height={40}
+                  className="rounded flex-shrink-0"
                 />
-              </div>
+                <div className="min-w-0">
+                  <div className="font-oswald font-semibold text-sm truncate">
+                    Tri-County Exterior Contractors
+                  </div>
+                  <div className="font-oswald font-light text-xs text-gray-500 truncate">
+                    Lawncare &amp; Landscaping in Bowling Green, OH
+                  </div>
+                  <div className="font-oswald text-xs text-blue-500 truncate">
+                    teclawncare.com
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
         </>
