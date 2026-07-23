@@ -63,7 +63,7 @@ export default function HomePage() {
             className="mt-6 h-auto rounded-full border border-cyan-400/40 bg-cyan-400/10 px-6 py-2.5 font-oswald text-base font-medium text-cyan-100 hover:border-cyan-300/70 hover:bg-cyan-400/20 hover:text-white"
           >
             <Link href="/resume">
-              View Résumé
+              View Resume
               <span aria-hidden="true">→</span>
             </Link>
           </Button>
