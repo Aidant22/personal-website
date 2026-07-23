@@ -1,49 +1,61 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const iconLinks = [
+  {
+    href: "/resume",
+    title: "Résumé",
+    src: "/document.svg",
+    alt: "Résumé",
+    external: false,
+    imgClassName: "brightness-0 invert",
+  },
+  {
+    href: "https://www.linkedin.com/in/aidan-tobar/",
+    title: "LinkedIn",
+    src: "/linkedin.png",
+    alt: "LinkedIn",
+    external: true,
+  },
+  {
+    href: "https://github.com/Aidant22",
+    title: "GitHub",
+    src: "/github-mark/github-mark-white.png",
+    alt: "GitHub",
+    external: true,
+  },
+];
+
 export default function Header() {
   return (
-    <div className="border-b-4 border-black flex-1 py-4 px-2 ">
-      <div className="flex justify-between font-oswald">
-        <div className="text-xl font-bold">
-          <Link href="/">
-            <h2 className="hover:underline hover:shadow-sm">Aidan Tobar</h2>
-          </Link>
-        </div>
-        <div className="flex">
-          <Link href={"/resume"} title="Resume">
-            <Image
-              src={"/document.svg"}
-              alt="document logo for resume"
-              width={35}
-              height={35}
-              className="rounded-full hover:w-9"
-            />
-          </Link>
+    <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 font-oswald sm:px-6">
+      <Link href="/" className="group">
+        <span className="bg-gradient-to-r from-cyan-200 via-sky-200 to-indigo-200 bg-clip-text text-xl font-bold tracking-tight text-transparent">
+          Aidan Tobar
+        </span>
+      </Link>
+
+      <nav className="flex items-center gap-2 sm:gap-3">
+        {iconLinks.map((link) => (
           <Link
-            href={"https://www.linkedin.com/in/aidan-tobar/"}
-            target="blank"
-            title="LinkedIn"
+            key={link.title}
+            href={link.href}
+            title={link.title}
+            {...(link.external
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
+            className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-colors duration-200 hover:border-cyan-400/40 hover:bg-white/10"
           >
             <Image
-              src={"/linkedin.png"}
-              alt="linkedin logo"
-              width={35}
-              height={35}
-              className="rounded-full hover:w-9"
+              src={link.src}
+              alt={link.alt}
+              width={20}
+              height={20}
+              className={`h-5 w-5 object-contain ${link.imgClassName ?? ""}`}
             />
           </Link>
-          <Link href={"https://github.com/Aidant22"} target="blank" title="Github">
-            <Image
-              src={"/github-mark/github-mark.png"}
-              alt="github logo"
-              width={35}
-              height={35}
-              className="rounded-full hover:w-9"
-            />
-          </Link>
-        </div>
-      </div>
+        ))}
+      </nav>
     </div>
   );
 }

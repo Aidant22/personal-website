@@ -1,17 +1,26 @@
 export default function Footer() {
-    return (
-      <div className="border-b-4 border-black flex-1 py-4 px-2 ">
-        <div className="flex justify-between font-oswald footer">
-          <div className="flex">
-            Contact: <br/>
-            22atobar@gmail.com <br/>
-            (419)-494-7222
-          </div>
-          <div>
-            Made using Next.js and React <br/>
-            Deployed using Vercel
-          </div>
-        </div>
+  return (
+    <div className="mx-auto flex max-w-5xl flex-col gap-3 px-4 py-4 font-oswald text-sm text-slate-300 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+      <div className="flex flex-col gap-0.5">
+        <span className="font-semibold text-white">Contact</span>
+        <a
+          href="mailto:22atobar@gmail.com"
+          className="transition-colors hover:text-cyan-300"
+        >
+          22atobar@gmail.com
+        </a>
+        <a
+          href="tel:+14194947222"
+          className="transition-colors hover:text-cyan-300"
+        >
+          (419) 494-7222
+        </a>
       </div>
-    );
-  }
+      <div className="text-slate-400 sm:text-right">
+        Built with Next.js &amp; React
+        <br />
+        Deployed on Vercel
+      </div>
+    </div>
+  );
+}
