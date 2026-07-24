@@ -29,10 +29,18 @@ const iconLinks = [
 export default function Header() {
   return (
     <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3 font-oswald sm:px-6">
-      <Link href="/" className="group">
-        <span className="bg-gradient-to-r from-cyan-200 via-sky-200 to-indigo-200 bg-clip-text text-xl font-bold tracking-tight text-transparent">
-          Aidan Tobar
-        </span>
+      <Link href="/" title="Home" className="group">
+        <div className="h-10 w-10 overflow-hidden rounded-full border-2 border-white/20 bg-gradient-to-tr from-cyan-400/60 via-sky-400/40 to-indigo-400/60 p-0.5 transition-opacity duration-200 hover:opacity-80">
+          <div className="h-full w-full overflow-hidden rounded-full">
+            <Image
+              src="/Portait.jpeg"
+              alt="Home"
+              width={40}
+              height={40}
+              className="h-full w-full object-cover"
+            />
+          </div>
+        </div>
       </Link>
 
       <nav className="flex items-center gap-2 sm:gap-3">
