@@ -58,15 +58,26 @@ export default function HomePage() {
             Computer Scientist & Web Developer. Thanks for visiting!
           </p>
 
-          <Button
-            asChild
-            className="mt-6 h-auto rounded-full border border-cyan-400/40 bg-cyan-400/10 px-6 py-2.5 font-oswald text-base font-medium text-cyan-100 hover:border-cyan-300/70 hover:bg-cyan-400/20 hover:text-white"
-          >
-            <Link href="/resume">
-              View Resume
-              <span aria-hidden="true">→</span>
-            </Link>
-          </Button>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <Button
+              asChild
+              className="h-auto rounded-full border border-cyan-400/40 bg-cyan-400/10 px-6 py-2.5 font-oswald text-base font-medium text-cyan-100 hover:border-cyan-300/70 hover:bg-cyan-400/20 hover:text-white"
+            >
+              <Link href="/resume">
+                View Resume
+                <span aria-hidden="true">→</span>
+              </Link>
+            </Button>
+            <Button
+              asChild
+              className="h-auto rounded-full border border-white/15 bg-white/5 px-6 py-2.5 font-oswald text-base font-medium text-slate-200 hover:border-white/30 hover:bg-white/10 hover:text-white"
+            >
+              <Link href="/game">
+                Replay the Intro Game
+                <span aria-hidden="true">✦</span>
+              </Link>
+            </Button>
+          </div>
 
           <div className="mt-8 border-t border-white/10 pt-6 text-left">
             <h2 className="font-oswald text-2xl font-bold text-white">
