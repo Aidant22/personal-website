@@ -15,9 +15,27 @@ const glassCard =
   "rounded-3xl border-white/10 bg-white/[0.06] text-white shadow-2xl shadow-black/40 backdrop-blur-xl";
 
 const aboutItems = [
-  "Graduated from Bowling Green State University with a B.S. in Computer Science",
-  "I love building websites and web applications",
-  "I volunteer at my former high school coaching Valorant esports",
+  "Cum laude graduate of Bowling Green State University with a B.S. in Computer Science (May 2026)",
+  "Quality Engineer Intern at Westfield, building AI-powered developer tools with OpenAI and an MCP server, plus Playwright test automation",
+  "Previously a Web Developer Intern at Betco and an IT Intern at Otsego Local Schools, shipping full-stack apps in React, Next.js, and Python",
+  "Currently open to full-time software engineering opportunities",
+  "I enjoy video games and sports, I used to coach Valorant Esports at Otsego High School",
+];
+
+const skills = [
+  "React",
+  "Next.js",
+  "TypeScript",
+  "JavaScript",
+  "Python",
+  "C++",
+  "Angular",
+  "AI Integration",
+  "Playwright",
+  "Git",
+  "Github",
+  "Gitlabs",
+  "Azure DevOps",
 ];
 
 export default function HomePage() {
@@ -55,7 +73,8 @@ export default function HomePage() {
             Aidan Tobar
           </h1>
           <p className="mt-3 font-oswald text-base font-light text-slate-300 sm:text-lg">
-            Computer Scientist & Web Developer. Thanks for visiting!
+            Software Developer building AI-powered apps &amp; full-stack web
+            solutions.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
@@ -94,6 +113,17 @@ export default function HomePage() {
                 </li>
               ))}
             </ul>
+
+            <div className="mt-6 flex flex-wrap gap-2">
+              {skills.map((skill) => (
+                <span
+                  key={skill}
+                  className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-oswald text-sm font-light text-cyan-100"
+                >
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
           </CardContent>
         </Card>

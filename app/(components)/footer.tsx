@@ -4,10 +4,10 @@ export default function Footer() {
       <div className="flex flex-col gap-0.5">
         <span className="font-semibold text-white">Contact</span>
         <a
-          href="mailto:22atobar@gmail.com"
+          href="mailto:aidantobar1@gmail.com"
           className="transition-colors hover:text-cyan-300"
         >
-          22atobar@gmail.com
+          aidantobar1@gmail.com
         </a>
         <a
           href="tel:+14194947222"

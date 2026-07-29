@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Starfield from "@/components/ui/starfield";
 import XWingGame from "@/components/game/xwing-game";
 
@@ -18,7 +19,9 @@ export default function GamePage() {
         burstDuration={1800}
         transitionDuration={1400}
       />
-      <XWingGame />
+      <Suspense fallback={null}>
+        <XWingGame />
+      </Suspense>
     </>
   );
 }

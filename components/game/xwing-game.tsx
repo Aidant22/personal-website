@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 const SURVIVE_SECONDS = 20;
@@ -189,9 +190,13 @@ export default function XWingGame() {
   const goToPhaseRef = useRef(goToPhase);
   goToPhaseRef.current = goToPhase;
 
+  const searchParams = useSearchParams();
+
   const enterSite = () => {
     clearGateCookie();
-    window.location.assign("/");
+    const from = searchParams.get("from");
+    const dest = from && from.startsWith("/") && !from.startsWith("//") ? from : "/";
+    window.location.assign(dest);
   };
 
   useEffect(() => {
